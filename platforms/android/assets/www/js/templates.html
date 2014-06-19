@@ -1,0 +1,44 @@
+<script type="text/html" id="header">
+    <h1>Foot Stat</h1>
+</script>
+
+<script type="text/html" id="back_button">
+    <button>Back</button>
+</script>
+
+<script type="text/html" id="main-menu">
+    <button onclick="loadConsulterChampionnats()">Consulter Championnat</button>
+    <button onclick="loadAjouterChampionnat()">Creer Championnat</button>
+</script>
+
+<script type="text/html" id="consulter_championnats">
+    <h2>Consulter Championnat</h2>
+</script>
+
+<script type="text/html" id="ajouter_championnat">
+    <form>
+        <fieldset>
+            <legend>Création de championnat</legend>
+            </br>
+    
+            <label>Nom Championnat*</label></br>
+            <input type="text" id="nom">      
+            </br>
+            </br>
+
+            <label>Nombres d'Equipes*</label></br>
+            <input type="text" id="nbr_equipes">
+            </br>
+            </br>
+    
+            <label>Pays*</label></br>
+            <input type="text" id="pays">
+            </br>
+            </br>
+
+            <p>* champs obligatoire</p>
+            </br>
+        </fieldset>
+    </form>
+    <button onclick="enregistrerAjoutChampionnat()">Enregistrer</button>
+</script>
