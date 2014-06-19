@@ -73,7 +73,7 @@ function effacerChampionnat(id){
     database.transaction(
         function(tx) {
             tx.executeSql('DELETE FROM Championnat WHERE id=?',[id],
-            dbError
+            function(){}, dbError
             );   
         },
         dbError
