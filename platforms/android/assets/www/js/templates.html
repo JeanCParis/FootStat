@@ -9,6 +9,8 @@
 <script type="text/html" id="main-menu">
     <button onclick="loadConsulterChampionnats()">Consulter Championnat</button>
     <button onclick="loadAjouterChampionnat()">Creer Championnat</button>
+    <button onclick="loadConsulterEquipes()">Consulter Equipe</button>
+    <button onclick="loadAjouterEquipe()">Creer Equipe</button>
 </script>
 
 <script type="text/html" id="consulter_championnats">
@@ -27,12 +29,40 @@
             </br>
 
             <label>Nombres d'Equipes*</label></br>
-            <input type="text" id="nbr_equipes">
+            <select id="nbr_equipes" size="1">
+                <option value="0">-</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+            </select>
             </br>
             </br>
     
             <label>Pays*</label></br>
-            <input type="text" id="pays">
+            <select id="pays" size="1">
+                <option value="Allemagne">Allemagne</option>
+                <option value="Angleterre">Angleterre</option>
+                <option value="Belgique">Belgique</option>
+                <option value="Croatie">Croatie</option>
+                <option value="Danemark">Danemark</option>
+                <option value="Espagne">Espagne</option>
+                <option value="France" selected="selected">France</option>
+                <option value="Italie">italie</option>
+                <option value="Pays_Bas">Pays_Bas</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Russie">Russie</option>
+                <option value="Suede">Suede</option>
+                <option value="Suisse">Suisse</option
+                <option value="Turquie">Turquie</option>
+                <option value="Ukraine">Ukraine</option>
+            </select>
             </br>
             </br>
 
@@ -41,4 +71,12 @@
         </fieldset>
     </form>
     <button onclick="enregistrerAjoutChampionnat()">Enregistrer</button>
+</script>
+
+<script type="text/html" id="consulter_equipes">
+    <h2>Consulter Equipes</h2>
+</script>
+
+<script type="text/html" id="ajouter_equipe">
+    <h2>Création Equipe</h2>
 </script>
