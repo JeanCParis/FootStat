@@ -78,5 +78,28 @@
 </script>
 
 <script type="text/html" id="ajouter_equipe">
-    <h2>Création Equipe</h2>
+    <form>
+        <fieldset>
+            <legend>Création d'equipe</legend>
+            </br>
+    
+            <label>Nom Equipe*</label></br>
+            <input type="text" id="nom">      
+            </br>
+            </br>
+
+            <label>Abreviation Equipe*</label></br>
+            <input type="text" id="abreviation">      
+            </br>
+            </br>
+            
+            <label>Championnat</label></br>
+            <select id="selec_championnat">
+            </select>
+
+            <p>* champs obligatoire</p>
+            </br>
+        </fieldset>
+    </form>
+    <button onclick="enregistrerAjoutEquipe()">Enregistrer</button>
 </script>
