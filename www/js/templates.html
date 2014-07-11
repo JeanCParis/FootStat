@@ -1,5 +1,5 @@
 <script type="text/html" id="header">
-    <h1>Foot Stat</h1>
+    <h1>FootStat</h1>
 </script>
 
 <script type="text/html" id="back_button">
@@ -10,7 +10,7 @@
     <button onclick="loadConsulterChampionnats()">Consulter Championnat</button>
     <button onclick="loadAjouterChampionnat()">Creer Championnat</button>
     <button onclick="loadConsulterEquipes()">Consulter Equipe</button>
-    <button onclick="loadAjouterEquipe()">Creer Equipe</button>
+    <button onclick="loadAjouterEquipe()">Créer Equipe</button>
 </script>
 
 <script type="text/html" id="consulter_championnats">
@@ -20,7 +20,7 @@
 <script type="text/html" id="ajouter_championnat">
     <form>
         <fieldset>
-            <legend>Création de championnat</legend>
+            <legend>Création De Championnat</legend>
             </br>
     
             <label>Nom Championnat*</label></br>
@@ -78,6 +78,7 @@
 </script>
 
 <script type="text/html" id="ajouter_equipe">
+    <h2>Ajouter Equipes</h2>
     <form>
         <fieldset>
             <legend>Création d'equipe</legend>
@@ -88,7 +89,7 @@
             </br>
             </br>
 
-            <label>Abreviation Equipe*</label></br>
+            <label>Diminutif Equipe*</label></br>
             <input type="text" id="abreviation">      
             </br>
             </br>
@@ -97,9 +98,74 @@
             <select id="selec_championnat">
             </select>
 
-            <p>* champs obligatoire</p>
+            <p>* champ obligatoire</p>
             </br>
         </fieldset>
     </form>
     <button onclick="enregistrerAjoutEquipe()">Enregistrer</button>
+</script>
+
+<script type="text/html" id="ajouter_match">
+    <h2>Ajouter Match</h2>
+    <form>
+        <fieldset>
+            <legend>Création match</legend>
+            </br>
+            
+            <label>Equipe domicile*</label></br>
+            <select id="selec_equip_dom">
+            </select>
+            </br>
+            </br>
+    
+            <label>Equipe extérieur*</label></br>
+            <select id="selec_equip_ext">
+            </select>
+            </br>
+            </br>
+            
+            <label>Score</label></br>
+            <select id="selec_score_dom" size="1">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <span> - </span>
+            <select id="selec_score_ext" size="1">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            </br>
+            </br>
+            
+            <label>Journée*</label></br>
+            <select id="journee" size="1">
+            </select>
+            </br>
+    
+            <div id="search_error"></div>
+            
+            <p>* champ obligatoire</p>
+            </br>
+        </fieldset>
+    </form>
+</script>
+
+<script type="text/html" id="consulter_matchs">
+    <h2>Consulter Matchs</h2>
 </script>

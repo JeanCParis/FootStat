@@ -38,6 +38,7 @@ C:\Users\Jean-Christophe\Documents\NetBeansProjects\FootStat\platforms\android\a
 C:\Users\Jean-Christophe\Documents\NetBeansProjects\FootStat\platforms\android\assets\www\plugins \
 C:\Users\Jean-Christophe\Documents\NetBeansProjects\FootStat\platforms\android\assets\www\css\index.css \
 C:\Users\Jean-Christophe\Documents\NetBeansProjects\FootStat\platforms\android\assets\www\img\logo.png \
+C:\Users\Jean-Christophe\Documents\NetBeansProjects\FootStat\platforms\android\assets\www\js\googleMap.js \
 C:\Users\Jean-Christophe\Documents\NetBeansProjects\FootStat\platforms\android\assets\www\js\index.js \
 C:\Users\Jean-Christophe\Documents\NetBeansProjects\FootStat\platforms\android\assets\www\js\libs \
 C:\Users\Jean-Christophe\Documents\NetBeansProjects\FootStat\platforms\android\assets\www\js\templates.html \
